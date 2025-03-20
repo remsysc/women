@@ -1,0 +1,85 @@
+.home-carousel .carousel-item img {
+  max-height: 75vh;
+  object-fit: contain;
+}
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%f' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%f' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+.carousel-indicators {
+  color: white;
+}
+.home-text {
+  padding: 3rem 2rem;
+  background-color: #f9f9f9;
+  color: #333333;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-text .text-wrapper {
+  font-family: "Georgia", serif;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.home-text h2 {
+  font-family: "Arial", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #555555;
+  text-align: center;
+}
+
+.home-text p {
+  margin-bottom: 1.5rem;
+}
+
+.circle-text-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem; /* Increases spacing between rows */
+}
+
+.circle-placeholder {
+  width: 120px; /* Adjust circle size */
+  height: 120px;
+  border-radius: 50%; /* Keeps the circular shape */
+  background-color: #ccc; /* Placeholder background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.5rem; /* Adds more space between image and text */
+  overflow: hidden;
+}
+
+.circle-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fits nicely into the circle */
+}
+
+.text-content {
+  flex: 1; /* Allows text to adapt based on available space */
+}
+
+.text-content p {
+  margin: 0; /* Removes default paragraph spacing */
+  line-height: 1.8; /* Improves readability of text */
+}
+
+@media (max-width: 768px) {
+  .circle-text-wrapper {
+    flex-direction: column; /* Stacks image and text vertically on small screens */
+    text-align: center;
+  }
+
+  .circle-placeholder {
+    margin-right: 0; /* Removes right margin when stacked */
+    margin-bottom: 1rem; /* Adds space below the circle */
+  }
+}
